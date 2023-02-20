@@ -1,25 +1,21 @@
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-
-document.getElementById("demo").innerHTML = fruits.toString();
-
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-
-fruits.unshift("Lemon");
-
-const myGirls = ["Cecilie", "Lone"];
-
-const myBoys = ["Emil", "Tobias", "Linus"];
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+alert(fruits.toString());
 
 
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+alert(fruits.unshift("Lemon"));
 
-const myChildren = myGirls.concat(myBoys);
 
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+vegetables = ["Carrot", "Onion", "Potato"];
+myChildren = fruits.concat(vegetables);
+alert(myChildren);
 
+
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+alert(fruits.sort());
+
+
+fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.sort();
-
-const fruits = ["Banana", "Orange", "Apple", "Mango"];
-
-fruits.sort();
-
-fruits.reverse();
+alert(fruits.reverse());
