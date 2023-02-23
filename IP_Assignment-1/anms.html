@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Four CSS Animations</title>
+	<style>
+		/* First Animation */
+		.animation1 {
+			width: 50px;
+			height: 50px;
+			background-color: red;
+			position: relative;
+			animation-name: move;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+
+		@keyframes move {
+			from {left: 0;}
+			to {left: 200px;}
+		}
+
+		/* Second Animation */
+		.animation2 {
+			width: 50px;
+			height: 50px;
+			background-color: blue;
+			position: relative;
+			animation-name: spin;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+		}
+
+		@keyframes spin {
+			from {transform: rotate(0deg);}
+			to {transform: rotate(360deg);}
+		}
+
+		/* Third Animation */
+		.animation3 {
+			width: 50px;
+			height: 50px;
+			background-color: green;
+			position: relative;
+			animation-name: bounce;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-out;
+		}
+
+		@keyframes bounce {
+			0%, 100% {top: 0;}
+			50% {top: 50px;}
+		}
+
+		/* Fourth Animation */
+		.animation4 {
+			width: 50px;
+			height: 50px;
+			background-color: yellow;
+			position: relative;
+			animation-name: fade;
+			animation-duration: 2s;
+			animation-iteration-count: infinite;
+			animation-timing-function: ease-in-out;
+		}
+
+		@keyframes fade {
+			from {opacity: 1;}
+			to {opacity: 0.5;}
+		}
+	</style>
+</head>
+<body>
+	<div class="animation1"></div>
+	<div class="animation2"></div>
+	<div class="animation3"></div>
+	<div class="animation4"></div>
+</body>
+</html>
